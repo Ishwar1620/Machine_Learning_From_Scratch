@@ -17,7 +17,6 @@ Gradient Descent is an optimization algorithm used to minimize a function by ite
 ### **Gradient Descent Formula**
 \
 x_new = x_old - η⋅∇f(x)
-\
 
 Where:
 - η (**learning rate**) controls step size.
