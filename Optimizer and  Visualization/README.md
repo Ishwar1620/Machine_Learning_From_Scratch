@@ -17,18 +17,18 @@ Gradient Descent is an optimization algorithm used to minimize a function by ite
 ### **Gradient Descent Formula**
 \[
 x_{new} = x_{old} - \eta \cdot 
-abla f(x)
+∇f(x)
 \]
 Where:
 - \( \eta \) (**learning rate**) controls step size.
 - \( 
-abla f(x) \) is the gradient (derivative) of \( f(x) \).
+∇f(x) \) is the gradient (derivative) of \( f(x) \).
 - The process repeats for a set number of iterations or until convergence.
 
 ### **Gradient of the Function**
 \[
 
-abla f(x) = 2x + 10 \cos(x)
+ f(x) = 2x + 10 \cos(x)
 \]
 This derivative is used in the update step of gradient descent.
 
@@ -101,43 +101,9 @@ The output plot shows:
 
 ---
 
-## 📌 How to Run the Code
-### **1️⃣ Install Required Libraries**
-```bash
-pip install numpy matplotlib
-```
-### **2️⃣ Run the Python Script**
-```bash
-python gradient_descent.py
-```
 
----
-
-## 📌 Parameters & Tuning
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `starting_point` | Initial value of \( x \) | `0.0` |
-| `learning_rate` | Step size for gradient updates | `0.1` |
-| `num_iterations` | Number of gradient descent steps | `50` |
 
 #### **🔹 Adjust Learning Rate**
 - **Too small** → Slow convergence.
 - **Too large** → Might overshoot and never converge.
 
----
-
-## 📌 Key Takeaways
-✅ **Fully Vectorized Gradient Descent**  
-✅ **Step-by-Step Visualization of Optimization**  
-✅ **Adjustable Learning Rate & Iterations**  
-
-This project is a great way to understand how **gradient descent** optimizes functions in **machine learning**.
-
----
-
-### **📌 Next Steps**
-🔹 Extend this to **higher-dimensional functions**  
-🔹 Implement **Momentum-based Gradient Descent**  
-🔹 Try **Adam Optimizer** for advanced optimization  
-
-🚀 **Happy Learning!**
