@@ -1,6 +1,6 @@
 # Gradient Descent Visualization
 
-## 📌 Overview
+##  Overview
 This project demonstrates **Gradient Descent Optimization** using Python and NumPy. The function to be minimized is:
 
 \[
@@ -11,7 +11,7 @@ A **gradient descent algorithm** iteratively updates \( x \) based on the gradie
 
 ---
 
-## 📌 How Gradient Descent Works
+##  How Gradient Descent Works
 Gradient Descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the **negative gradient**.
 
 ### **Gradient Descent Formula**
@@ -33,7 +33,7 @@ This derivative is used in the update step of gradient descent.
 
 ---
 
-## 📌 Code Explanation
+##  Code Explanation
 
 ### **1️⃣ Function Definition**
 ```python
@@ -91,7 +91,7 @@ plt.show()
 
 ---
 
-## 📌 Visualization Example
+##  Visualization Example
 ![Gradient Descent Visualization](gradient_descent_visualization.png)
 
 The output plot shows:
