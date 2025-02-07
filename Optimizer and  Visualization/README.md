@@ -20,14 +20,13 @@ x_{new} = x_{old} - \eta \cdot
 ∇f(x)
 \]
 Where:
-- \( \eta \) (**learning rate**) controls step size.
+- (**learning rate**) controls step size.
 - \( 
 ∇f(x) \) is the gradient (derivative) of \( f(x) \).
 - The process repeats for a set number of iterations or until convergence.
 
 ### **Gradient of the Function**
 \[
-
  f(x) = 2x + 10 \cos(x)
 \]
 This derivative is used in the update step of gradient descent.
