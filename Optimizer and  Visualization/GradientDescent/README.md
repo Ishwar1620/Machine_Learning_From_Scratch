@@ -1,7 +1,7 @@
 # Gradient Descent Visualization
 
 ##  Overview
-This project demonstrates **Gradient Descent Optimization** using Python and NumPy. The function to be minimized is:
+This Code demonstrates **Gradient Descent Optimization** using Python and NumPy. The function to be minimized is:
 
 \
 f(x)=x^2 +10sin(x)
