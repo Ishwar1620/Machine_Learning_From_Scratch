@@ -15,7 +15,7 @@ class LogisticRegression:
         return (1 / (1+np.exp(-z)))
 
     def cost_compute(y_pred ,y_true):
-
+        m = len(y_true)
         return -(1/m) * np.sum(y_true - np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred))
 
 
@@ -23,7 +23,7 @@ class LogisticRegression:
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0 
-
+        y = y.reshape(-1, 1)
         for _ in range(self.epochs):
 
             Linear_eq = np.dot(X, self.weights) + self.bias
@@ -42,7 +42,7 @@ class LogisticRegression:
 
     def predict(self, X):
         Linear_eq = np.dot(X, self.weights) + self.bias
-        y_predicted = np.sigmoid(Linear_eq) # will return the probabilites
+        y_predicted = self.sigmoid(Linear_eq) # will return the probabilites
 
 if __name__ == "__main__":
 
