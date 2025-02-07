@@ -41,7 +41,7 @@ class LogisticRegression:
 
 
     def predict(self, X):
-        Linear_eq = np.dot(X, self.weights) = self.bias
+        Linear_eq = np.dot(X, self.weights) + self.bias
         y_predicted = np.sigmoid(Linear_eq) # will return the probabilites
 
 if __name__ == "__main__":
