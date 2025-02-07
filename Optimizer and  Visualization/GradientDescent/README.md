@@ -3,9 +3,9 @@
 ##  Overview
 This project demonstrates **Gradient Descent Optimization** using Python and NumPy. The function to be minimized is:
 
-\[
-f(x) = x^2 + 10 \sin(x)
-\]
+\
+f(x)=x^2 +10sin(x)
+
 
 A **gradient descent algorithm** iteratively updates \( x \) based on the gradient of \( f(x) \) to find the minimum. The process is visualized using Matplotlib.
 
