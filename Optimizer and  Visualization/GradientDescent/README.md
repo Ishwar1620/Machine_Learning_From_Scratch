@@ -1,11 +1,11 @@
 # Gradient Descent Visualization
 
 ##  Overview
-This project demonstrates **Gradient Descent Optimization** using Python and NumPy. The function to be minimized is:
+This Code demonstrates **Gradient Descent Optimization** using Python and NumPy. The function to be minimized is:
 
-\[
-f(x) = x^2 + 10 \sin(x)
-\]
+\
+f(x)=x^2 +10sin(x)
+
 
 A **gradient descent algorithm** iteratively updates \( x \) based on the gradient of \( f(x) \) to find the minimum. The process is visualized using Matplotlib.
 
@@ -15,10 +15,9 @@ A **gradient descent algorithm** iteratively updates \( x \) based on the gradie
 Gradient Descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the **negative gradient**.
 
 ### **Gradient Descent Formula**
-\[
-x_{new} = x_{old} - η⋅∇f(x)
-∇f(x)
-\]
+\
+x_new = x_old - η⋅∇f(x)
+
 Where:
 - η (**learning rate**) controls step size.
 - \( 
