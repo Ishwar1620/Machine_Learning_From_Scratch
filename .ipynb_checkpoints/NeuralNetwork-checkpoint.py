@@ -19,12 +19,12 @@ class NeuralNetwork:
         exp_z = np.exp(z - np.max(z, axis=0, keepdims=True))
         return exp_z / np.sum(exp_z, axis=0, keepdims=True)
 
-    def relu(self, z,alpha=0.01):
-        return np.where(z > 0, z, alpha * z)
+    def relu(self, z):
+        return np.maximum(0, z)
 
 
-    def relu_derivative(self, d,alpha=0.01):
-         return np.where(d > 0, 1, alpha)
+    def relu_derivative(self, d):
+         return (d > 0).astype(float)
 
     def compute_cost(self, y_pred, y_true):
         m = y_true.shape[1]
