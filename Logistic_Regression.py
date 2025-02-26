@@ -1,5 +1,4 @@
 import numpy as np
-
 class LogisticRegression:
 
     def __init__(self, learning_rate = 0.01, epochs = 100):
@@ -70,5 +69,5 @@ if __name__ == "__main__":
     print("Weights:", model.weights)
     print("Bias:", model.bias)
 
-        
-         
+#this  is my branch
+
