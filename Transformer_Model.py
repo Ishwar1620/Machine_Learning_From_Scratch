@@ -172,7 +172,7 @@ class LinearLayer(nn.Module):
     def forward(self, x):
         return torch.log_softmax(self.Linear(x), dim = -1)
     
-class Transformer_Block(nn.Module):
+class TransformerBlock(nn.Module):
     def __init__(self, encoder: Encoder, decoder: Decoder, En_emb: InputEmbeddings, De_emb: InputEmbeddings, En_pos: PositionalEncoding, De_pos: PositionalEncoding, Linear: LinearLayer) ->None:
         super().__init__()
         self.encoder = encoder
