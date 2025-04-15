@@ -172,7 +172,7 @@ class LinearLayer(nn.Module):
     def forward(self, x):
         return torch.log_softmax(self.Linear(x), dim = -1)
     
-class Transformer(nn.Module):
+class Transformer_Block(nn.Module):
     def __init__(self, encoder: Encoder, decoder: Decoder, En_emb: InputEmbeddings, De_emb: InputEmbeddings, En_pos: PositionalEncoding, De_pos: PositionalEncoding, Linear: LinearLayer) ->None:
         super().__init__()
         self.encoder = encoder
@@ -196,7 +196,7 @@ class Transformer(nn.Module):
     def linear(self,x):
         return self.Linear(x)
 
-def build_transformer(src_vocab_size: int, tgt_vocab_size: int, src_seq_len: int, tgt_seq_len: int, N: int = 6, d_model: int = 512, h: int = 8 ,dropout: float = 0.01, d_ff: int = 2048) ->None:
+def make_transformer(src_vocab_size: int, tgt_vocab_size: int, src_seq_len: int, tgt_seq_len: int, N: int = 6, d_model: int = 512, h: int = 8 ,dropout: float = 0.01, d_ff: int = 2048) ->None:
 
     src_emb = InputEmbeddings(d_model, src_vocab_size)
     tgt_emb = InputEmbeddings(d_model, tgt_vocab_size)
